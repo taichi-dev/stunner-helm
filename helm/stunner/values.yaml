@@ -16,14 +16,14 @@ stunner:
         repository: ""
         name: l7mp/stunnerd
         pullPolicy: Always
-        tag: 0.10.10
+        tag: 0.11.0
         resources:
           limits:
+            cpu: 6000m
+            memory: 1024Mi
+          requests:
             cpu: 1000m
             memory: 512Mi
-          requests:
-            cpu: 250m
-            memory: 128Mi
 
       netdebug: 
         enabled: true
